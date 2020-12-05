@@ -6,8 +6,10 @@
 # Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 import sys
 import tensorflow as tf
+import os
 
 print(tf.__version__)
+print(os.getcwd())
 print(sys.path)
 
 physical_gpus = tf.config.experimental.list_physical_devices("GPU")
